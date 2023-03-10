@@ -1,0 +1,162 @@
+body {
+    /* Ваши стили */
+    background: linear-gradient(-45deg,
+      #ee7752, /* Первый цвет */
+      #e73c7e, /* Второй цвет */
+      #23a6d5, /* Третий цвет */
+      #23d5ab /* Четвертый цвет */
+    );
+    background-size: 400% 400%;
+    animation: gradient 45s ease infinite;
+    height: 100vh;
+}
+
+@keyframes gradient {
+
+    0% {
+    background-position: 0% 50%;
+    }
+    50% {
+    background-position: 100% 50%;
+    }
+
+    100% {
+    background-position: 0% 50%;
+    }
+}
+
+.container{
+    height: 300px;
+    width: 500px;
+    margin: 200px auto;
+
+}
+
+.glass{
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border:1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+h1{
+    color: azure;
+    font-family: sans-serif;
+    text-align: center;
+}
+h2{
+    color: azure;
+    font:  sans-serif;
+    text-align: center;
+    top: 40%;
+}
+.opicasity{
+    position: relative;
+    top: 70px;
+}
+
+
+
+.myButton {
+	background:linear-gradient(to bottom, #44c767 5%, #5cbf2a 100%);
+	background-color:#44c767;
+	border-radius:28px;
+	border:1px solid #18ab29;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:24px;
+	padding:19px 31px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
+    position: absolute  ;
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #5cbf2a 5%, #44c767 100%);
+	background-color:#5cbf2a;
+}
+
+
+
+.switch {
+    position: absolute;
+    top: 75%;
+    left: 80%;
+    width: 150px;
+    height: 50px;
+    text-align: center;
+    margin: -30px 0 0 -75px;
+    background: #00bc9c;
+    transition: all 0.2s ease;
+    border-radius: 25px;
+  }
+  .switch span {
+    position: absolute;
+    width: 20px;
+    height: 4px;
+    top: 50%;
+    left: 50%;
+    margin: -2px 0px 0px -4px;
+    background: #fff;
+    display: block;
+    transform: rotate(-45deg);
+    transition: all 0.2s ease;
+  }
+  .switch span:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 4px;
+    height: 12px;
+    margin-top: -8px;
+    background: #fff;
+    transition: all 0.2s ease;
+  }
+  input[type=radio] {
+    display: none;
+  }
+  .switch label {
+    cursor: pointer;
+    color: rgba(0,0,0,0.2);
+    width: 60px;
+    line-height: 50px;
+    transition: all 0.2s ease;
+  }
+  label[for=yes] {
+    position: absolute;
+    left: 0px;
+    height: 20px;
+  }
+  label[for=no] {
+    position: absolute;
+    right: 0px;
+  }
+  #no:checked ~ .switch {
+    background: #eb4f37;
+  }
+  #no:checked ~ .switch span {
+    background: #fff;
+    margin-left: -8px;
+  }
+  #no:checked ~ .switch span:after {
+    background: #fff;
+    height: 20px;
+    margin-top: -8px;
+    margin-left: 8px;
+  }
+  #yes:checked ~ .switch label[for=yes] {
+    color: #fff;
+  }
+  #no:checked ~ .switch label[for=no] {
+    color: #fff;
+  } 
+
+  p{
+    color: azure;
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 2em;
+  }

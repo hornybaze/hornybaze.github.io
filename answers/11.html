@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>БериЗаряд хелпер</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <a href="../index.html" class="myButton">Снова</a>
+
+
+    <div class="opicasity"><h1>БериЗаряд Хелпер</h1><br>
+        <h2>Помощник для техической поддержки</h2>
+    </div>
+    
+
+
+    <div class="container glass">
+        <h1>Вопрос:</h1>
+        <p id = "vopros">Введён верный номер апарата?</p>
+    </div>
+
+
+
+
+    <div class="toggle-radio">
+        <input type="radio" name="rdo" id="yes" onclick="wait()">
+        <input type="radio" name="rdo" id="no" onclick="window.location.href = '13.html'">
+        <div class="switch">    
+          <label for="yes">Да</label>
+          <label for="no">Нет</label>
+          <span></span>
+        </div>
+    </div>
+
+
+    <div class="container glass">
+        <h1>Ответ:</h1>
+        <p id = "otvet"></p>
+    </div>  
+
+
+
+
+
+
+
+
+
+
+    <script>
+
+        var vopros = document.getElementById('vopros');
+        var otvet = document.getElementById('otvet');
+
+        var da = document.getElementById('yes');
+        var no = document.getElementById('no');
+
+        var a = 0;
+        var b = 0;
+
+        function falsing(){
+            document.getElementById('no').checked = false;
+            document.getElementById('yes').checked = false;
+            
+        }
+
+        function wait(){
+            alert("Просим защепнуть заряд обратно")
+            window.location.href = '12.html'
+        
+        }
+
+
+        
+        
+
+    
+
+
+        
+    </script>
+       .
+</body>
+</html>
